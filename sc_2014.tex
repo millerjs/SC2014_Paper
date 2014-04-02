@@ -350,19 +350,34 @@ Fax: (888) 555--1212}}
 \begin{abstract}
 %\boldmath
 
+%% Big data is getting bigger day by day. Our scientific community needs
+%% to store, access and transfer these large amounts for their
+%% experimental studies. One of the biggest challenge face by the network
+%% scientists is to device mechanisms for moving data over high speed
+%% wide area networks efficiently and reliably. 
 
+%% Motivation
 
+As the datasets used by the scientific community grow, transferring
+data efficiently and reliably between collaborators becomes more
+challenging. TCP is reliable but slow, and UDP is fast but
+unreliable. UDT (UDP-based Data Transfer Protocol) takes the best
+features of TCP and UDP and provides reliable and high speed data
+transfers over high performance wide area networks (WAN).
 
-UDR, udpipe, and ucp are applications built around UDT for high
-performance transfer of bulk data.  UDR is a wrapper around rsync that
-enables rsync to use UDT. The bidirectional network piping
-application, udpipe, allows for versatile and secure data flows. An
-alternative to scp over high performance networks, ucp, can be used
-for secure and recursive directory transfers. These applications
+We have developed an application suite built around UDT comprised of
+UDR, udpipe, and ucp.  UDR is a wrapper around rsync that enables
+rsync to use UDT. The bidirectional network piping application,
+udpipe, allows for versatile and secure data flows. An alternative to
+scp over high performance networks, ucp, can be used for secure and
+recursive directory transfers.
+
+This paper details the development of this application suite and
+experimental studies over a high performance WAN.  These applications
 demonstrate substantial performance increases compared to their TCP
 counterparts.
 
-
+%% for high performance data transfer
 
 
 \end{abstract}
