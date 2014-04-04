@@ -362,23 +362,24 @@ Development and Performance Analysis of UDT-based Application Suite for High Per
 
 As the datasets used by the scientific community grow, transferring
 data efficiently and reliably between collaborators becomes more
-challenging. TCP is reliable but slow, and UDP is fast but
-unreliable. UDT (UDP-based Data Transfer Protocol) takes the best
-features of TCP and UDP and provides reliable and high speed data
-transfers over high performance wide area networks (WAN).
+challenging. UDT (UDP-based Data Transfer Protocol) takes best
+features of TCP and UDP and provides reliable and high-speed data
+transfers over high performance WANs.
 
-We have developed an application suite built around UDT comprised of
-UDR, udpipe, and ucp.  UDR is a wrapper around rsync that enables
-rsync to use UDT. A bidirectional network piping application, udpipe
-allows for versatile and secure data flows. An alternative to SCP over
-high performance networks, ucp can be used for secure and recursive
-directory transfers.
+We have built a suite around UDT, which provides a high-speed
+alternative for wide range of data transfer applications. UDR enables
+rsync to use UDT. UDPIPE replicates the functionality of netcat over
+UDT. UCP, uses UDT for recursive directory transfers like
+SCP. Additionally, all applications incorporate authentication and
+encryption, providing a secure mechanism for high-speed data
+transfers. All our code is open source and easy to run across multiple
+platforms.
 
-This paper details the development of this application suite and
-experimental studies over a high performance WAN.  These applications
-demonstrate substantial performance increases compared to their TCP
+In this paper, we describe the design and implementation of this
+application suite. We presents experimental results from large data
+transfers over multiple high performance WANs. These results
+demonstrate a substantial increase in performance compared to the TCP
 counterparts.
-
 
 \end{abstract}
 % IEEEtran.cls defaults to using nonbold math in the Abstract.
